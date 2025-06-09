@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
 }
 
-h1 {
+header {
     background-color: #4CAF50;
     color: white;
     text-align: center;

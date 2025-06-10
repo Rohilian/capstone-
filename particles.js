@@ -32,8 +32,9 @@ class Particle {
 }
 
 function createParticles(event) {
+    if (particlesArray.length > 100) particlesArray.splice(0, 10); // Prevent overflow
     for (let i = 0; i < 5; i++) {
-        particlesArray.push(new Particle(event.x, event.y, Math.random() * 5 + 1, "white"));
+        particlesArray.push(new Particle(event.clientX, event.clientY, Math.random() * 5 + 1, "white"));
     }
 }
 

@@ -93,12 +93,27 @@ footer {
     border: 2px solid white;
     cursor: pointer;
     z-index: 1002;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.menu-btn.active {
-    transform: scale(1.1); /* Slightly enlarges the button */
-    background-color: rgba(255, 255, 255, 0.2); /* Adds a subtle effect */
+.menu-btn.break {
+    opacity: 0; /* Makes the button disappear briefly after breaking */
 }
 
-   
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: explode 0.7s forwards;
+}
+
+@keyframes explode {
+    to {
+        transform: translate(var(--dx), var(--dy)) scale(0);
+        opacity: 0;
+    }
+}
+

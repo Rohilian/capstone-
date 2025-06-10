@@ -133,18 +133,21 @@ border-bottom-right-radius:30px;
   width: 80%;
   max-width: 400px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  color: black;
 }
     
-}
 .close {
   position: absolute;
   top: 10px;
   right: 16px;
   font-size: 24px;
   font-weight: bold;
-  color: black;
+  color: black;  /* Make the X black */
   cursor: pointer;
+  background: transparent; /* Ensures no background */
+  border: none;
 }
+
 .close:hover {
   color: #e74c3c;
 }

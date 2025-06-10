@@ -1,3 +1,4 @@
+// Sidebar menu logic
 document.querySelector(".menu-btn").addEventListener("click", function() {
     const sidebar = document.querySelector(".sidebar");
     const menuBtn = document.querySelector(".menu-btn");
@@ -10,31 +11,39 @@ document.querySelector(".menu-btn").addEventListener("click", function() {
         menuBtn.classList.remove("active");
     }, 300);
 });
+
+// Modal fade-in and fade-out logic
 window.onload = function() {
-  var modal = document.getElementById('popupModal');
-  var closeBtn = document.getElementById('closeModal');
+    var modal = document.getElementById('popupModal');
+    var closeBtn = document.getElementById('closeModal');
 
-  if (modal && closeBtn) {
-    modal.style.display = 'block';
+    if (modal && closeBtn) {
+        // Show modal, then trigger fade-in
+        modal.style.display = 'block';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
 
-    closeBtn.onclick = function() {
-      modal.style.display = 'none';
-    };
+        // Close with fade-out
+        closeBtn.onclick = function() {
+            modal.classList.remove('show');
+            modal.classList.add('closing');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.classList.remove('closing');
+            }, 300);
+        };
 
-    window.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
-    };
-  }
+        // Click outside modal to close
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+                modal.classList.add('closing');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    modal.classList.remove('closing');
+                }, 300);
+            }
+        };
+    }
 };
-const modal = document.querySelector('.modal');
-const closeBtn = document.querySelector('.close');
-
-closeBtn.addEventListener('click', function() {
-  modal.classList.add('closing');
-  setTimeout(() => {
-    modal.style.display = 'none'; // Or remove modal from DOM
-    modal.classList.remove('closing');
-  }, 300); // Match the animation duration (0.3s = 300ms)
-});

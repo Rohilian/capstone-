@@ -171,5 +171,5 @@ border-bottom-right-radius:30px;
 .modal.show {
   opacity: 1;
   pointer-events: auto;
-  animation: modalFadeIn 0.3s;
+  animation: modalFadeIn 1s;
 }

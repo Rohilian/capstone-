@@ -32,7 +32,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 0;
 }
 
 /* Main Content */
@@ -51,7 +51,6 @@ footer {
 }
 
 .sidebar {
-    .sidebar {
     position: fixed;
     top: 0;
     left: -250px;
@@ -69,6 +68,7 @@ footer {
 
 .sidebar ul li {
     padding: 1rem;
+    z-index: 1;
 }
 
 .sidebar ul li a {
@@ -88,7 +88,7 @@ footer {
     font-size: 20px;
     border: 2px solid white;
     cursor: pointer;
-    z-index: 998;
+    z-index: 2;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 

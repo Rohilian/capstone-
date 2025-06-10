@@ -13,35 +13,11 @@ header {
     text-align: center;
     padding: 1rem;
     font-family: "Nunito";
-    position: fixed; /* Ensures it stays at the top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensures it stays above other elements */
-}
-
-nav {
-    background-color: #333; /* Ensures it's visible */
-    margin-top: 7rem; /* Pushes it below the fixed header */
-    flex: none; /* Prevents unexpected behavior */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    background: #333;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0;
-    padding: 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+    z-index: 1000;
 }
 
 main {
@@ -74,6 +50,44 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999; /* Slightly lower than header */
-    padding-top: 5rem; /* Prevents overlap with header */
+    z-index: 999;
+    padding-top: 5rem;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 2rem;
+    transition: 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 1rem;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }

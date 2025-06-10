@@ -145,4 +145,18 @@ border-bottom-right-radius:30px;
 .close:hover {
   color: #e74c3c;
 }
+/* Add animation for modal closing */
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+.modal.closing {
+  animation: modalFadeOut 0.3s forwards;
+}
 

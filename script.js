@@ -12,7 +12,7 @@ document.querySelector(".menu-btn").addEventListener("click", function() {
     }, 300);
 });
 
-// Modal fade-in and fade-out logic
+// Modal fade-in and break+dissolve fade-out logic
 window.onload = function() {
     var modal = document.getElementById('popupModal');
     var closeBtn = document.getElementById('closeModal');
@@ -24,14 +24,14 @@ window.onload = function() {
             modal.classList.add('show');
         }, 10);
 
-        // Close with fade-out
+        // Close with break+dissolve animation
         closeBtn.onclick = function() {
             modal.classList.remove('show');
             modal.classList.add('closing');
             setTimeout(() => {
                 modal.style.display = 'none';
                 modal.classList.remove('closing');
-            }, 300);
+            }, 1000); // Match the animation duration (1s = 1000ms)
         };
 
         // Click outside modal to close
@@ -42,7 +42,7 @@ window.onload = function() {
                 setTimeout(() => {
                     modal.style.display = 'none';
                     modal.classList.remove('closing');
-                }, 300);
+                }, 1000);
             }
         };
     }

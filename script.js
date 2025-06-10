@@ -28,26 +28,3 @@ window.onload = function() {
     };
   }
 };
-const modal = document.querySelector('.modal');
-const openBtn = document.querySelector('.menu-btn'); // or your open trigger
-const closeBtn = document.querySelector('.close');
-
-// Function to open modal with animation
-function openModal() {
-  modal.classList.add('show');
-}
-
-// Function to close modal with animation
-function closeModal() {
-  modal.classList.remove('show');
-}
-
-openBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-
-// ts is for closing when clicking outside idk if i wanto keep but idgaf
-window.addEventListener('click', function(event) {
-  if (event.target === modal) {
-    closeModal();
-  }
-});

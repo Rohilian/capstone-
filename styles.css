@@ -123,14 +123,17 @@ border-bottom-right-radius:30px;
 }
 
 .modal-content {
-  background: linear-gradient(150deg,rgb(254, 248, 228) 25%,rgb(252, 238, 203) 25%,rgb(252, 238, 203) 75%,rgb(254, 248, 228) 33%)
-  margin: 10% auto;
+  background: linear-gradient(150deg, rgb(254, 248, 228) 25%, rgb(252, 238, 203) 25%, rgb(252, 238, 203) 75%, rgb(254, 248, 228) 33%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 30px 20px;
   border-radius: 8px;
   width: 80%;
   max-width: 400px;
-  position: relative;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
     
 }
 .close {

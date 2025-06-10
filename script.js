@@ -28,3 +28,13 @@ window.onload = function() {
     };
   }
 };
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.close');
+
+closeBtn.addEventListener('click', function() {
+  modal.classList.add('closing');
+  setTimeout(() => {
+    modal.style.display = 'none'; // Or remove modal from DOM
+    modal.classList.remove('closing');
+  }, 300); // Match the animation duration (0.3s = 300ms)
+});

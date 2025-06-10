@@ -30,7 +30,24 @@ class Particle {
         ctx.fill();
     }
 }
-
+document.getElementById('menu-btn').addEventListener('click', function(e) {
+    const button = e.target;
+    const rect = button.getBoundingClientRect();
+    // Spawn 20 particles at the button center
+    for (let i = 0; i < 20; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        // Random direction and distance
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * 60 + 20;
+        particle.style.left = `${rect.left + rect.width / 2}px`;
+        particle.style.top = `${rect.top + rect.height / 2}px`;
+        particle.style.setProperty('--dx', `${Math.cos(angle) * distance}px`);
+        particle.style.setProperty('--dy', `${Math.sin(angle) * distance}px`);
+        document.body.appendChild(particle);
+        setTimeout(() => particle.remove(), 700);
+    }
+});
 function createParticles(event) {
     if (particlesArray.length > 100) particlesArray.splice(0, 10); // Prevent overflow
     for (let i = 0; i < 5; i++) {

@@ -68,7 +68,7 @@ border-bottom-right-radius:30px;
 /* Sidebar Links */
 .sidebar ul {
     list-style: none;
-    padding: 0;
+    padding: 3rem;
 }
 
 .sidebar ul li {

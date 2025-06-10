@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 /* Particle Background */
@@ -15,7 +16,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1; /* Sends it behind all content */
+    z-index: -1;
 }
 
 /* Header */
@@ -35,7 +36,7 @@ header {
 /* Main Content */
 main {
     flex: 1;
-    padding: 8rem 2rem 2rem; /* Pushes content below header */
+    padding: 8rem 2rem 2rem;
 }
 
 /* Footer */
@@ -56,10 +57,10 @@ footer {
     height: 100%;
     background-color: #333;
     padding-top: 3rem;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     z-index: 1001;
-    border-top-right-radius: 15px; /* Round top-right corner */
-    border-bottom-right-radius: 15px; /* Round bottom-right corner */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /* Sidebar Links */
@@ -81,13 +82,13 @@ footer {
 /* Menu Button */
 .menu-btn {
     position: fixed;
-    top: 1px;
-    left: 0px;
-    background-color: transparent; /* Removes the green background */
-    color: white; /* Keeps the text readable */
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    color: white;
     padding: 15px 20px;
     font-size: 20px;
-    border: 2px solid white; /* Adds a subtle outline */
+    border: 2px solid white;
     cursor: pointer;
     z-index: 1002;
 }

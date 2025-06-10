@@ -21,7 +21,9 @@ header {
 }
 
 nav {
-    margin-top: 4rem; /* Pushes navigation down so it doesn't overlap */
+    background-color: #333; /* Ensures it's visible */
+    margin-top: 4rem; /* Pushes it below the fixed header */
+    flex: none; /* Prevents unexpected behavior */
 }
 
 nav ul {

@@ -12,7 +12,16 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-family: "Nunito"
+    font-family: "Nunito";
+    position: fixed; /* Ensures it stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+nav {
+    margin-top: 4rem; /* Pushes navigation down so it doesn't overlap */
 }
 
 nav ul {
@@ -46,20 +55,23 @@ footer {
 }
 
 .background {
-background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 .titlebg {
-background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
+
 .philosophytitlebg {
-background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 .philosophybg {
-background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Slightly lower than header */
+    padding-top: 5rem; /* Prevents overlap with header */
 }

@@ -50,17 +50,15 @@ footer {
     margin-top: auto;
 }
 
-/* Sidebar Menu */
 .sidebar {
     .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Sidebar starts hidden */
+    left: -250px;
     width: 250px;
     height: 100%;
     background-color: #333;
     padding-top: 3rem;
-    transition
 }
 
 /* Sidebar Links */
@@ -90,7 +88,7 @@ footer {
     font-size: 20px;
     border: 2px solid white;
     cursor: pointer;
-    z-index: 1002;
+    z-index: 998;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 

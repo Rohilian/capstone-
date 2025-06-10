@@ -7,6 +7,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
+    background-color: black; /* Sets full-page black background */
+    color: white; /* Ensures text is readable */
 }
 
 /* Particle Background */
@@ -37,7 +39,6 @@ header {
 main {
     flex: 1;
     padding: 8rem 2rem 2rem;
-    color: black
 }
 
 /* Footer */

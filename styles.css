@@ -56,7 +56,7 @@ footer {
     width: 250px;
     height: 100%;
     background-color: #333;
-    padding-top: 2rem;
+    padding-top: 3rem;
     transition: 0.3s;
     z-index: 1001;
     border-top-right-radius: 15px; /* Round top-right corner */

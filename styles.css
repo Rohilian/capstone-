@@ -59,6 +59,7 @@ footer {
     padding-top: 2rem;
     transition: 0.3s;
     z-index: 1001;
+    border-radius: 10px; /* Adds rounded corners */
 }
 
 .sidebar ul {

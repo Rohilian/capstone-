@@ -173,3 +173,30 @@ border-bottom-right-radius:30px;
   pointer-events: auto;
   animation: modalFadeIn 3s;
 }
+@keyframes modalBreakDissolve {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg);
+  }
+  20% {
+    transform: scale(1.05) rotate(-2deg) skew(3deg, 2deg);
+  }
+  40% {
+    transform: scale(0.98) rotate(2deg) skew(-4deg, -2deg);
+  }
+  70% {
+    filter: blur(2px);
+    opacity: 0.6;
+    transform: scale(1.1) rotate(8deg) skew(12deg, 6deg);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(0.7) rotate(-24deg) skew(-30deg, 12deg);
+  }
+}
+
+.modal.closing {
+  animation: modalBreakDissolve 1s forwards;
+}

@@ -110,3 +110,37 @@ border-bottom-right-radius:30px;
     transform: scale(1.1); /* Slightly enlarges the button */
     background-color: rgba(255, 255, 255, 0.2); /* Adds a subtle effect */
 }
+.modal {
+  display: block; /* Show by default, JS will hide if needed */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+.close:hover {
+  color: #e74c3c;
+}
+

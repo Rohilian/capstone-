@@ -50,7 +50,7 @@ footer {
 
 /* Sidebar Menu */
 .sidebar {
-    position: fixed;
+   position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
@@ -59,7 +59,8 @@ footer {
     padding-top: 2rem;
     transition: 0.3s;
     z-index: 1001;
-    border-radius: 30px; /* Adds rounded corners */
+    border-top-right-radius: 15px; /* Round top-right corner */
+    border-bottom-right-radius: 15px; /* Round bottom-right corner */
 }
 
 .sidebar ul {

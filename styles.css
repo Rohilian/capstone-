@@ -82,8 +82,8 @@ footer {
 /* Menu Button */
 .menu-btn {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     background-color: transparent;
     color: white;
     padding: 15px 20px;

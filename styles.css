@@ -51,13 +51,15 @@ footer {
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    padding-top: 5rem;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s ease;
+  /* Add your background and other styles */
+  background: #222;
+  z-index: 1000;
 }
 
 /* Sidebar Links */

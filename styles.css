@@ -22,7 +22,7 @@ header {
 
 nav {
     background-color: #333; /* Ensures it's visible */
-    margin-top: 10rem; /* Pushes it below the fixed header */
+    margin-top: 8rem; /* Pushes it below the fixed header */
     flex: none; /* Prevents unexpected behavior */
 }
 

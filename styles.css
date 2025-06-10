@@ -80,8 +80,8 @@ footer {
 
 .menu-btn {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     background-color: transparent; /* Removes the green background */
     color: white; /* Keeps the text readable */
     padding: 15px 20px;

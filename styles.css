@@ -59,7 +59,7 @@ footer {
   transition: left 0.3s ease;
   /* Add your background and other styles */
   background: #222;
-  z-index: 1000;
+  z-index: 1;
 }
 
 /* Sidebar Links */

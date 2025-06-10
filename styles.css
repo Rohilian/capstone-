@@ -63,12 +63,11 @@ footer {
 }
 
 .philosophytitlebg {
-    background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-color: black
 }
 
 .philosophybg {
-    background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    position: fixed;
+background-image: linear-gradient(to right top, #051937, #00296e, #2b33a4, #6932d6, #b100ff);    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

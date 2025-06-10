@@ -200,3 +200,20 @@ border-bottom-right-radius:30px;
 .modal.closing {
   animation: modalBreakDissolve 1s forwards;
 }
+.particle {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffbf00;
+    pointer-events: none;
+    animation: particle-move 0.7s forwards;
+    z-index: 9999;
+}
+
+@keyframes particle-move {
+    to {
+        transform: translate(var(--dx), var(--dy)) scale(0.2);
+        opacity: 0;
+    }
+}

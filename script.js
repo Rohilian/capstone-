@@ -1,15 +1,33 @@
-document.querySelector(".menu-btn").addEventListener("click", function() {
-    const sidebar = document.querySelector(".sidebar");
-    const menuBtn = document.querySelector(".menu-btn");
+document.querySelector(".menu-btn").addEventListener("click", function(event) {
+    const menuBtn = event.target;
+    menuBtn.classList.add("break");
 
-    // Toggle sidebar visibility
-    sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+    for (let i = 0; i < 20; i++) { // Creates multiple particles
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+        
+        // Position particles at the button's location
+        const x = event.clientX;
+        const y = event.clientY;
+        particle.style.left = `${x}px`;
+        particle.style.top = `${y}px`;
 
-    // Add/remove animation class for a subtle button effect
-    menuBtn.classList.toggle("active");
+        // Random explosion directions
+        const dx = (Math.random() - 0.5) * 200;
+        const dy = (Math.random() - 0.5) * 200;
+        particle.style.setProperty("--dx", `${dx}px`);
+        particle.style.setProperty("--dy", `${dy}px`);
+        
+        document.body.appendChild(particle);
 
-    // Reset animation after a short delay
+        // Remove particles after animation
+        setTimeout(() => {
+            particle.remove();
+        }, 700);
+    }
+
+    // Reset the button after breaking
     setTimeout(() => {
-        menuBtn.classList.remove("active");
-    }, 300);
+        menuBtn.classList.remove("break");
+    }, 800);
 });

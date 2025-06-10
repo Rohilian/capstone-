@@ -60,6 +60,7 @@ footer {
   /* Add your background and other styles */
   background: #222;
   z-index: 1;
+border-radius: 10px
 }
 
 /* Sidebar Links */

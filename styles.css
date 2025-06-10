@@ -86,7 +86,7 @@ footer {
     color: white; /* Keeps the text readable */
     padding: 15px 20px;
     font-size: 20px;
-    border: 2px solid white; /* Adds a subtle border for visibility */
+    border: none
     cursor: pointer;
     z-index: 1002;
 }

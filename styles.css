@@ -123,9 +123,9 @@ border-bottom-right-radius:30px;
 }
 
 .modal-content {
-  background: white
+  background: linear-gradient(150deg,rgb(254, 248, 228) 25%,rgb(252, 238, 203) 25%,rgb(252, 238, 203) 75%,rgb(254, 248, 228) 33%)
   margin: 10% auto;
-  padding: 500px 250px;
+  padding: 30px 20px;
   border-radius: 8px;
   width: 80%;
   max-width: 400px;

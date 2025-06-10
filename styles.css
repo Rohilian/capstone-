@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    background-color: #4CAF50;
+    background-color: transparent;
     color: white;
     text-align: center;
     padding: 1.5rem;
@@ -46,7 +46,7 @@ main {
   min-height: 100vh; /* makes sure main takes up full viewport height */
     flex: 1;
     padding: 8rem 2rem 2rem;
-}
+}`
 
 /* Footer */
 footer {

@@ -8,6 +8,17 @@ body {
     min-height: 100vh;
 }
 
+/* Particle Background */
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Sends it behind all content */
+}
+
+/* Header */
 header {
     background-color: #4CAF50;
     color: white;
@@ -21,11 +32,13 @@ header {
     z-index: 1000;
 }
 
+/* Main Content */
 main {
     flex: 1;
     padding: 8rem 2rem 2rem; /* Pushes content below header */
 }
 
+/* Footer */
 footer {
     background: #333;
     color: white;
@@ -34,23 +47,9 @@ footer {
     margin-top: auto;
 }
 
-/* Backgrounds */
-.background {
-    background-image: linear-gradient(to top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-}
-
-.titlebg {
-    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-}
-
-.philosophybg {
-    background-image: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    padding-top: 6rem;
-}
-
 /* Sidebar Menu */
 .sidebar {
-   position: fixed;
+    position: fixed;
     top: 0;
     left: -250px;
     width: 250px;
@@ -63,6 +62,7 @@ footer {
     border-bottom-right-radius: 15px; /* Round bottom-right corner */
 }
 
+/* Sidebar Links */
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -78,6 +78,7 @@ footer {
     display: block;
 }
 
+/* Menu Button */
 .menu-btn {
     position: fixed;
     top: 1px;
@@ -86,7 +87,7 @@ footer {
     color: white; /* Keeps the text readable */
     padding: 15px 20px;
     font-size: 20px;
-    border: transparent
+    border: 2px solid white; /* Adds a subtle outline */
     cursor: pointer;
     z-index: 1002;
 }

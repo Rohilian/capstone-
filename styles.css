@@ -90,7 +90,7 @@ footer {
     cursor: pointer;
     z-index: 2;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    border-radius: 25px; /* <-- Add this line for rounded corners */
+    border-radius: 15px; 
 }
 
 .menu-btn.active {

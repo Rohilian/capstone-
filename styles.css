@@ -10,6 +10,10 @@ body {
     background-color: black; /* Sets full-page black background */
     color: white; /* Ensures text is readable */
 }
+.main-content {
+  position: relative;
+  z-index: 1;
+}
 
 /* Particle Background */
 #particleCanvas {
@@ -19,6 +23,15 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
+}
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none; /* So it doesn't block clicks */
 }
 
 /* Header */

@@ -33,6 +33,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 0;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:30px;
 }
 
 /* Main Content */

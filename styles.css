@@ -121,19 +121,6 @@ border-bottom-right-radius:30px;
 .menu-btn.active {
     transform: scale(1.1); /* Slightly enlarges the button */
     background-color: rgba(255, 255, 255, 0.2); /* Adds a subtle effect */
-}
-.modal {
-  display: block; /* Show by default, JS will hide if needed */
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0,0,0,0.5);
-}
-
 .modal-content {
   background: linear-gradient(150deg, rgb(254, 248, 228) 25%, rgb(252, 238, 203) 25%, rgb(252, 238, 203) 75%, rgb(254, 248, 228) 33%);
   position: absolute;

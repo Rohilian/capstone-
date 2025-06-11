@@ -16,18 +16,11 @@ window.onload = function() {
     var modal = document.getElementById('popupModal');
     var closeBtn = document.getElementById('closeModal');
 
-    // Only show modal if it hasn't been shown before
     if (modal && closeBtn && !localStorage.getItem('modalShown')) {
-        modal.style.display = 'block';
-        setTimeout(() => {
-            modal.classList.add('show');
-        }, 10);
-
-        // Set flag so it doesn't show again
+        modal.classList.add('show');
         localStorage.setItem('modalShown', 'true');
     } else if (modal) {
-        // Ensure it's hidden if not supposed to show
-        modal.style.display = 'none';
+        modal.classList.remove('show');
     }
 
     if (modal && closeBtn) {
@@ -36,7 +29,6 @@ window.onload = function() {
             modal.classList.remove('show');
             modal.classList.add('closing');
             setTimeout(() => {
-                modal.style.display = 'none';
                 modal.classList.remove('closing');
             }, 1000);
         };
@@ -47,7 +39,6 @@ window.onload = function() {
                 modal.classList.remove('show');
                 modal.classList.add('closing');
                 setTimeout(() => {
-                    modal.style.display = 'none';
                     modal.classList.remove('closing');
                 }, 1000);
             }

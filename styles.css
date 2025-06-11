@@ -222,6 +222,7 @@ border-bottom-right-radius:30px;
 }
 .center-text {
     text-align: center;
+    font-family: 'Nunito';
 }
 
 @keyframes particle-move {

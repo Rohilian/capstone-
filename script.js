@@ -12,18 +12,25 @@ document.querySelector(".menu-btn").addEventListener("click", function() {
     }, 300);
 });
 
-// Modal fade-in and break+dissolve fade-out logic
 window.onload = function() {
     var modal = document.getElementById('popupModal');
     var closeBtn = document.getElementById('closeModal');
 
-    if (modal && closeBtn) {
-        // Show modal, then trigger fade-in
+    // Only show modal if it hasn't been shown before
+    if (modal && closeBtn && !localStorage.getItem('modalShown')) {
         modal.style.display = 'block';
         setTimeout(() => {
             modal.classList.add('show');
         }, 10);
 
+        // Set flag so it doesn't show again
+        localStorage.setItem('modalShown', 'true');
+    } else if (modal) {
+        // Ensure it's hidden if not supposed to show
+        modal.style.display = 'none';
+    }
+
+    if (modal && closeBtn) {
         // Close with break+dissolve animation
         closeBtn.onclick = function() {
             modal.classList.remove('show');
@@ -31,7 +38,7 @@ window.onload = function() {
             setTimeout(() => {
                 modal.style.display = 'none';
                 modal.classList.remove('closing');
-            }, 1000); // Match the animation duration (1s = 1000ms)
+            }, 1000);
         };
 
         // Click outside modal to close

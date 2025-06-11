@@ -57,7 +57,6 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh; /* makes sure main takes up full viewport height */
     flex: 1;
     padding: 8rem 2rem 2rem;
     font-family: 'Nunito';

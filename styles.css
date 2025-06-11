@@ -218,7 +218,7 @@ border-bottom-right-radius:30px;
     background: #ffbf00;
     pointer-events: none;
     animation: particle-move 0.7s forwards;
-    z-index: 1;
+    z-index: 9999;
 }
 .center-text {
     text-align: center;

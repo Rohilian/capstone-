@@ -86,7 +86,7 @@ if (menuBtn) {
         const button = e.target;
         const rect = button.getBoundingClientRect();
         // Spawn 20 particles at the button center
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
             // Random direction and distance

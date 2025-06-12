@@ -15,11 +15,11 @@
 
     <button class="menu-btn">&#9776; Menu</button>
     <div class="sidebar">
-<ul>
-  <li><a href="/" id="home-link">Home</a></li>
-  <li><a href="philosophy.html">Philosophy of Story</a></li>
-  <li><a href="thesis.html">Thesis</a></li>
-</ul>
+      <ul>
+        <li><a href="/" id="home-link">Home</a></li>
+        <li><a href="philosophy.html">Philosophy of Story</a></li>
+        <li><a href="thesis.html">Thesis</a></li>
+      </ul>
     </div>
 
     <main>
@@ -35,28 +35,26 @@
 
     <script src="script.js"></script>
     <script src="particles.js"></script>
- <!-- Modal Structure -->
-<div id="popupModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeModal">&times;</span>
-    <h2 class="center-text">Welcome to my Capstone project!</h2>
-    <p class="center-text">This website will present my thoughts on why Humans tell stories using 10 different sources to support my argument.</p>
-  </div>
-   <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Only show the modal if it hasn't been shown before in this browser
-    if (!localStorage.getItem('modalShown')) {
-        document.querySelector('.modal').classList.add('show');
-        localStorage.setItem('modalShown', 'true');
-    } else {
-        document.querySelector('.modal').classList.remove('show');
-    }
-
-    // Close button functionality
-    document.querySelector('.close').addEventListener('click', function() {
-        document.querySelector('.modal').classList.remove('show');
-    });
-});
-</script>
+    <!-- Modal Structure -->
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="center-text">Welcome to my Capstone project!</h2>
+        <p class="center-text">This website will present my thoughts on why Humans tell stories using 10 different sources to support my argument.</p>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          if (!localStorage.getItem('modalShown')) {
+              document.querySelector('.modal').classList.add('show');
+              localStorage.setItem('modalShown', 'true');
+          } else {
+              document.querySelector('.modal').classList.remove('show');
+          }
+          document.querySelector('.close').addEventListener('click', function() {
+              document.querySelector('.modal').classList.remove('show');
+          });
+      });
+    </script>
 </body>
 </html>

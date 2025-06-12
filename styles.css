@@ -244,3 +244,8 @@ border-bottom-right-radius:30px;
 .sourcesbg {
     background-color: #567360;
 }
+
+a:visited {
+  color: #fff
+}
+

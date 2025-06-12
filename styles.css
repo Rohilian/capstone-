@@ -77,8 +77,7 @@ footer {
   width: 250px;
   height: 100%;
   transition: left 0.3s ease;
-  /* Add your background and other styles */
-  background: #FAF3E0;
+  background: linear-gradient(150deg, rgb(254, 248, 228) 25%, rgb(252, 238, 203) 25%, rgb(252, 238, 203) 75%, rgb(254, 248, 228) 33%);
   z-index: 1;
 border-top-right-radius:30px;
 border-bottom-right-radius:30px;

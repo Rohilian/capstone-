@@ -16,12 +16,8 @@ window.onload = function() {
     var modal = document.getElementById('popupModal');
     var closeBtn = document.getElementById('closeModal');
 
-    if (modal && closeBtn && !localStorage.getItem('modalShown')) {
-        modal.classList.add('show');
-        localStorage.setItem('modalShown', 'true');
-    } else if (modal) {
-        modal.classList.remove('show');
-    }
+    modal.classList.add('show');
+    localStorage.setItem('modalShown', 'true');
 
     if (modal && closeBtn) {
         // Close with break+dissolve animation

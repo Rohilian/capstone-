@@ -46,7 +46,7 @@ function createParticles(event) {
     // event.clientX/Y may be undefined for some touch events
     // Only run if coordinates are valid
     if (typeof event.clientX === 'number' && typeof event.clientY === 'number') {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 10; i++) {
             particlesArray.push(
                 new Particle(event.clientX, event.clientY, Math.random() * 5 + 1, "white")
             );

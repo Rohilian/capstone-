@@ -7,9 +7,9 @@ document.querySelector(".menu-btn").addEventListener("click", function() {
 
     menuBtn.classList.toggle("active");
 
-    setTimeout(() => {
-        menuBtn.classList.remove("active");
-    }, 300);
+    // setTimeout(() => {
+    //     menuBtn.classList.remove("active");
+    // }, 300);
 });
 
 window.onload = function() {

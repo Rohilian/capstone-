@@ -6,8 +6,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: black; /* Sets full-page black background */
-    color: white; /* Ensures text is readable */
+    background-color: black; 
+    color: #FAF3E0
 }
 .main-content {
   position: relative;
@@ -36,7 +36,7 @@ body {
 /* Header */
 header {
     background-color: transparent;
-    color: white;
+    color: #FAF3E0;
     border: 2px solid white;
     text-align: center;
     padding: 1.5rem;
@@ -62,7 +62,7 @@ main {
 }
 footer {
     background: #333;
-    color: white;
+    color: #FAF3E0;
     text-align: center;
     padding: 1rem;
     margin-top: auto;
@@ -106,10 +106,10 @@ border-bottom-right-radius:30px;
     top: 35px;
     left: 25px;
     background-color: transparent;
-    color: white; /* default: white */
+    color: #FAF3E0
     padding: 11.25px 15px;
     font-size: 15px;
-    border: 2px solid white; /* default: white border */
+    border: 2px #FAF3E0; 
     cursor: pointer;
     z-index: 2;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s, border 0.3s;

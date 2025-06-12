@@ -42,3 +42,6 @@ window.onload = function() {
                     modal.classList.remove('closing');
                 }, 1000);
             }
+        }
+    }
+}

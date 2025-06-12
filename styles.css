@@ -233,11 +233,14 @@ border-bottom-right-radius:30px;
     padding: 2rem 1rem;
     margin: 2rem auto;
     max-width: 900px;
-}
 .homebg {
     background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
-}
-.sourcesbg
-    backround-color: #B2C8BA;
+    /* Optional: set a fallback background color */
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.sourcesbg {
+    background-color: #B2C8BA;
+}

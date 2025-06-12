@@ -42,6 +42,19 @@ window.onload = function() {
                     modal.classList.remove('closing');
                 }, 1000);
             }
+            const menuBtn = document.querySelector('.menu-btn');
+const sidebar = document.querySelector('.sidebar');
+
+menuBtn.addEventListener('click', () => {
+  const sidebarOpen = sidebar.style.left === '0px';
+  if (sidebarOpen) {
+    sidebar.style.left = '-250px';
+    menuBtn.classList.remove('active');
+  } else {
+    sidebar.style.left = '0px';
+    menuBtn.classList.add('active');
+  }
+});
         };
     }
 };

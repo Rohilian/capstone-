@@ -14,22 +14,23 @@ body {
   z-index: 1;
 }
 
-/* Particle Background */
 #particleCanvas {
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
+    pointer-events: none; /* Allows mouse events to pass through to buttons/links */
     width: 100vw;
     height: 100vh;
-    z-index: 9999;
+    z-index: 1; /* Just above the background, below UI elements */
 }
+
 #particles-js {
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 0;
   pointer-events: none; /* So it doesn't block clicks */
 }
 

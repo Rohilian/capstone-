@@ -246,6 +246,10 @@ border-bottom-right-radius:30px;
     background-color: #567360;
 }
 
+.thesisbg {
+    background-color: #b7410e;
+}
+
 a:visited {
   color: #fff
 }

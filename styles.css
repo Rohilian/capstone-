@@ -244,10 +244,16 @@ border-bottom-right-radius:30px;
 
 .sourcesbg {
    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
+     background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .thesisbg {
    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
+     background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 a:visited {

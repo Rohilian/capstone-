@@ -228,14 +228,14 @@ border-bottom-right-radius:30px;
 }
 #sources-section {
     background-color: #fff
-    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
+    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/refs/heads/main/Screenshot%202025-06-10%2014.47.19%20(1).png');
     border-radius: 18px;
     padding: 2rem 1rem;
     margin: 2rem auto;
     max-width: 900px;
 }
 .homebg {
-    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
+    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/refs/heads/main/Screenshot%202025-06-10%2014.47.19%20(1).png');
     /* Optional: set a fallback background color */
     background-color: #fff;
     background-size: cover;
@@ -243,14 +243,14 @@ border-bottom-right-radius:30px;
 }
 
 .sourcesbg {
-   background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
+   background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/refs/heads/main/Screenshot%202025-06-10%2014.47.19%20(1).png');
      background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .thesisbg {
-   background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
+   background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/refs/heads/main/Screenshot%202025-06-10%2014.47.19%20(1).png');
      background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;

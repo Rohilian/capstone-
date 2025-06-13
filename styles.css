@@ -227,8 +227,8 @@ border-bottom-right-radius:30px;
     }
 }
 #sources-section {
-    background-color: #F88379 !important;
-    background-image: none !important;
+    background-color: #fff
+    background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
     border-radius: 18px;
     padding: 2rem 1rem;
     margin: 2rem auto;
@@ -243,11 +243,11 @@ border-bottom-right-radius:30px;
 }
 
 .sourcesbg {
-    background-color: #567360;
+   background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
 }
 
 .thesisbg {
-    background-color: #b7410e;
+   background-image: url('https://raw.githubusercontent.com/Rohilian/capstone-/main/Screenshot%202025-06-10%2014.47.19.png');
 }
 
 a:visited {

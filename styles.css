@@ -277,3 +277,11 @@ a {
   text-align: center;
   margin: 40px;
 }
+
+/* This will affect all anchor links, including those with classes */
+a, a:visited {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+
